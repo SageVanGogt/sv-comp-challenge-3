@@ -1,0 +1,68 @@
+body {
+  width: 100vw;
+}
+
+/* grid */
+main {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 200px 48% 12% 40%;
+  grid-template-rows: 100px 160px 50px 350px 200px 600px;
+  grid-template-areas: 
+              "a b b b"
+              "a c c c"
+              "a d d d"
+              "a e f f"
+              "a g g h"
+              "a g g i"
+              "a g g i"
+              "a g g i";
+
+}
+
+/* sections */
+
+.nav__site {
+ grid-area: a;
+ background-color: lightblue;
+}
+
+.search {
+ grid-area: b;
+ background-color: grey;
+}
+
+.title {
+ grid-area: c;
+ background-color: yellow;
+}
+
+.nav__position {
+ grid-area: d;
+ background-color: green;
+}
+
+.graph__donut {
+ grid-area: e;
+ background-color: pink;
+}
+
+.graph__bar {
+ grid-area: f;
+ background-color: purple;
+}
+
+.description {
+ grid-area: g;
+ background-color: chartreuse;
+}
+
+.social {
+ grid-area: h;
+ background-color: magenta;
+}
+
+.links {
+ grid-area: i;
+ background-color: lightgreen;
+}
