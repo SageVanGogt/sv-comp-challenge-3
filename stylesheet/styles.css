@@ -1,5 +1,6 @@
 body {
   width: 100vw;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* grid */
@@ -23,49 +24,55 @@ main {
 /* GRID SECTIONS */
 
 .nav__site {
- grid-area: a;
- background-color: lightblue;
+  grid-area: a;
+  background-color: lightblue;
 }
 
 .search {
- grid-area: b;
- background-color: grey;
- display: flex;
+  grid-area: b;
+  background-color: white;
+  display: flex;
 }
 
 .title {
- grid-area: c;
- background-color: yellow;
+  grid-area: c;
+  background-color: yellow;
 }
 
 .nav__position {
- grid-area: d;
- background-color: green;
+  grid-area: d;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .graph__donut {
- grid-area: e;
- background-color: pink;
+  grid-area: e;
+  background-color: pink;
 }
 
 .graph__bar {
- grid-area: f;
- background-color: purple;
+  grid-area: f;
+  background-color: purple;
 }
 
 .description {
- grid-area: g;
- background-color: chartreuse;
+  grid-area: g;
+  background-color: chartreuse;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social {
- grid-area: h;
- background-color: magenta;
+  grid-area: h;
+  background-color: magenta;
 }
 
 .links {
- grid-area: i;
- background-color: lightgreen;
+  grid-area: i;
+  background-color: lightgreen;
 }
 
 /* NAV */
@@ -89,6 +96,7 @@ main {
 
 .nav__site li:hover {
   background-color: pink;
+  border-left: 8px solid blue;
 }
 
 /* SEARCH */
@@ -103,7 +111,7 @@ main {
 }
 
 .search__list:hover, .search__page:hover, .search__person:hover, .search__menu:hover {
-  background-color: white;
+  background-color: blue;
 }
 
 .search__bar {
@@ -117,3 +125,81 @@ main {
   float: right;
   font-size: 1rem;
 }
+
+/* JOB DESCRIPTION */
+
+.table {
+  background-color: white;
+  width: 86%;
+  height: 86%;
+  line-height: 3;
+  border-radius: 5px;
+}
+
+.table table {
+  width: 85%;
+  margin: auto;
+}
+
+.table tr {
+  border-bottom: 1px solid gray;
+  margin-left: 20px;
+}
+
+.table__col--1 {
+  padding-right: 150px;
+  text-transform: uppercase;
+  font-size: .85rem;
+}
+
+.table__col--2 {
+  font-size: 1.2rem;
+}
+
+#description {
+  line-height: 1;
+  padding-bottom: 15px;
+}
+
+.table__banner {
+  width: 100%;
+  height: 70px;
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.table h2 {
+  text-transform: uppercase;
+  padding: 10px 0 0 5%;
+  color: white;
+}
+
+/* NAV JOB POSITION MID PAGE */
+
+.nav__position--list {
+  display: flex;
+}
+
+.nav__position--list li:hover {
+  border-bottom: 2px solid blue;
+}
+
+.nav__position--list li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 0 2vw;  
+  font-size: .9rem;
+}
+
+#nav__link--1 {
+  margin-left: 2vw;
+}
+
+/*.nav__position--list li a:hover {
+  border-bottom: 2px solid blue;
+}*/
+
+
+
+
+
