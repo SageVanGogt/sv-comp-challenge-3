@@ -3,7 +3,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* grid */
+/* GRID */
 main {
   display: grid;
   width:100vw;
@@ -37,6 +37,7 @@ main {
 .title {
   grid-area: c;
   background-color: yellow;
+  display: flex;
 }
 
 .nav__position {
@@ -75,6 +76,7 @@ main {
   background-color: lightgreen;
 }
 
+  
 /* NAV */
 
 .user {
@@ -112,6 +114,7 @@ main {
   border-left: 8px solid blue;
 }
 
+
 /* SEARCH */
 
 .search__list, .search__page, .search__person, .search__menu {
@@ -124,12 +127,16 @@ main {
 }
 
 .search__list:hover, .search__page:hover, .search__person:hover, .search__menu:hover {
-  background-color: blue;
+  background-color: #44a4fa;
 }
 
 .search__bar {
   width: 68%;
   border: 1px solid black;
+}
+
+.search_icon  {
+
 }
 
 .search__input {
@@ -138,6 +145,7 @@ main {
   float: right;
   font-size: 1rem;
 }
+
 
 /* JOB DESCRIPTION */
 
@@ -212,6 +220,23 @@ main {
   border-bottom: 2px solid blue;
 }*/
 
+
+/* POSITION TITLE */
+
+.title__name, .title__icons {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.title__name {
+  margin-left: 4%;
+}
+
+.title__icons {
+  justify-content: flex-end;
+  margin-right: 3%;
+}
 
 
 
