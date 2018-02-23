@@ -1,0 +1,61 @@
+@media screen and (max-width: 1200px) {
+
+  main {
+    display: grid;
+    width:100vw;
+    grid-template-columns: 220px calc(55% - 121px) calc(15% - 33px) calc(30% - 66px);
+    grid-template-rows: 90px 160px 50px 370px 250px 750px 100px;
+    grid-template-areas: 
+                "a b b b"
+                "a c c c"
+                "a d d d"
+                "a e e e"
+                "a f f f"
+                "a g g g"
+                "a g g g"
+                "a i i i"
+                "a h h h";
+/* shit where is h*/
+  }
+
+/* GRID SECTIONS */
+
+/* NAV JOB POSITION MID PAGE */
+  .nav__position--list li a {
+    margin: 0 10%;  
+    font-size: .8rem;
+  }
+
+  #nav__link--1 {
+  }
+
+}
+
+@media screen and (max-width: 910px) {
+  main {
+    display: grid;
+    width:100vw;
+    grid-template-columns: 55vw 15vw 30vw;
+    grid-template-rows: 90px 160px 50px 370px 250px 750px;
+    grid-template-areas: 
+                "b b b"
+                "c c c"
+                "d d d"
+                "e e e"
+                "f f f"
+                "g g g"
+                "g g g"
+                "i i i"
+                "h h h";
+
+  }
+
+  .nav__site {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 690px) {
+
+}
+
