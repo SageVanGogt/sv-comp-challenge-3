@@ -3,18 +3,17 @@
   main {
     display: grid;
     width:100vw;
-    grid-template-columns: 220px calc(55% - 121px) calc(15% - 33px) calc(30% - 66px);
-    grid-template-rows: 90px 160px 50px 370px 250px 750px 100px;
+    grid-template-columns: 220px calc(25% - 55px) calc(75% - 165px);
+    grid-template-rows: 90px 160px 50px 370px 250px 750px 200px;
     grid-template-areas: 
-                "a b b b"
-                "a c c c"
-                "a d d d"
-                "a e e e"
-                "a f f f"
-                "a g g g"
-                "a g g g"
-                "a i i i"
-                "a h h h";
+                "a b b "
+                "a c c "
+                "a d d "
+                "a e e "
+                "a f f "
+                "a g g "
+                "h i i ";
+                
 /* shit where is h*/
   }
 
