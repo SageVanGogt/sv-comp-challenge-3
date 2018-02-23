@@ -130,6 +130,7 @@ main {
 .search__icons {
   color: #a2acbe;
   font-size: 150%;
+  padding: 38px;
 }
 
 .search__icons:hover {
@@ -241,16 +242,29 @@ main {
 
 .title__name, .title__icons {
   width: 50%;
-  display: flex;
-  align-items: center;
 }
 
 .title__name {
-  margin-left: 4%;
+  margin: auto 0 auto 4%;
+}
+
+.title__name h1 {
+  font-size: 2rem;
+}
+
+.title__name p {
+  display: inline-block;
+}
+
+.title__name a {
+  text-decoration: none;
+  color: #44a4fa;
 }
 
 .title__icons {
+  display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin-right: 3%;
 }
 
