@@ -127,7 +127,13 @@ main {
   border-right: 1px solid gray;
 }
 
-.fa-angle-double-left:hover, .fa-address-book:hover, .fa-list-ul:hover, .fa-th:hover {
+.search__icons {
+  color: #a2acbe;
+  font-size: 150%;
+  padding: 38px;
+}
+
+.search__icons:hover {
   color: white;
 }
 
@@ -135,12 +141,21 @@ main {
   background-color: #44a4fa;
 }
 
-.search__bar {
-  width: calc(100% - 368px);
+.search__person {
+  border-left: 1px solid gray;
 }
 
-.search_icon  {
+.search__bar {
+  width: calc(100% - 368px);
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
+.fa-search  {
+  font-size: 120%;
+  color: #a2acbe;
+  margin-right: 2%;
 }
 
 .search__input {
@@ -148,6 +163,7 @@ main {
   width: 90%;
   float: right;
   font-size: 1rem;
+  border: none;
 }
 
 
@@ -199,7 +215,7 @@ main {
   color: white;
 }
 
-/* NAV JOB POSITION MID PAGE */
+/* JOB POSITION NAV MID PAGE */
 
 .nav__position--list {
   display: flex;
@@ -220,25 +236,35 @@ main {
   margin-left: 2vw;
 }
 
-/*.nav__position--list li a:hover {
-  border-bottom: 2px solid blue;
-}*/
 
 
 /* POSITION TITLE */
 
 .title__name, .title__icons {
   width: 50%;
-  display: flex;
-  align-items: center;
 }
 
 .title__name {
-  margin-left: 4%;
+  margin: auto 0 auto 4%;
+}
+
+.title__name h1 {
+  font-size: 2rem;
+}
+
+.title__name p {
+  display: inline-block;
+}
+
+.title__name a {
+  text-decoration: none;
+  color: #44a4fa;
 }
 
 .title__icons {
+  display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin-right: 3%;
 }
 
