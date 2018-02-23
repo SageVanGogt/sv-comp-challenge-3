@@ -25,7 +25,7 @@ main {
 
 .nav__site {
   grid-area: a;
-  background-color: lightblue;
+  background-color: #364051;
 }
 
 .search {
@@ -38,6 +38,7 @@ main {
   grid-area: c;
   background-color: yellow;
   display: flex;
+  border-top: 1px solid gray;
 }
 
 .nav__position {
@@ -123,7 +124,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border-right: 1px solid gray;
+}
+
+.fa-angle-double-left:hover, .fa-address-book:hover, .fa-list-ul:hover, .fa-th:hover {
+  color: white;
 }
 
 .search__list:hover, .search__page:hover, .search__person:hover, .search__menu:hover {
@@ -131,8 +136,7 @@ main {
 }
 
 .search__bar {
-  width: 68%;
-  border: 1px solid black;
+  width: calc(100% - 368px);
 }
 
 .search_icon  {
@@ -224,8 +228,8 @@ main {
 /* POSITION TITLE */
 
 .title__name, .title__icons {
-  display: flex;
   width: 50%;
+  display: flex;
   align-items: center;
 }
 
@@ -238,6 +242,6 @@ main {
   margin-right: 3%;
 }
 
-
+/* LINKS SECTION */
 
 
