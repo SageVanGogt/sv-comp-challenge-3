@@ -4,6 +4,7 @@ body {
 }
 
 /* GRID */
+
 main {
   display: grid;
   width:100vw;
@@ -268,6 +269,21 @@ main {
   margin-right: 3%;
 }
 
+.title__icon {
+  font-size: 18px;
+  color: #a2acbe;
+}
+
+.icon--border {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+  border: 1.5px solid #a2acbe;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* LINKS SECTION */
 
 
