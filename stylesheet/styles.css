@@ -101,19 +101,42 @@ main {
 .nav__site h3 {
   line-height: 3;
   margin-left: 30px;
+  font-size: .8rem;
+  color: rgb(98, 111, 129);
 }
 
 .nav__site a {
-  padding-left: 30px;
+  padding: 13px 60px 13px 30px;
   line-height: 3;
   text-transform: uppercase;
   text-decoration: none;
   color: gray;
 }
 
+.nav__site a:hover {
+  color: rgb(240, 246, 247);
+}
+
+.nav__site li {
+  font-size: .8rem;
+  transition: .3s;
+}
+
 .nav__site li:hover {
-  background-color: pink;
-  border-left: 8px solid blue;
+  background-color: rgb(48, 58, 75);
+  border-left: 5px solid aqua;
+}
+
+.nav__icon {
+  margin-right: 10px;
+}
+
+.nav__icon:hover {
+  color: rgb(240, 246, 247);
+}
+
+hr {
+  border: 1px solid rgb(48, 58, 75);
 }
 
 
@@ -165,6 +188,7 @@ main {
   float: right;
   font-size: 1rem;
   border: none;
+  outline: none;
 }
 
 
@@ -222,7 +246,7 @@ main {
   display: flex;
 }
 
-.nav__position--list li:hover {
+.nav__position--list li a:hover {
   border-bottom: 2px solid blue;
 }
 
@@ -231,6 +255,11 @@ main {
   text-decoration: none;
   margin: 0 2vw;  
   font-size: .9rem;
+  color: rgb(203, 204, 206);
+}
+
+.nav__position--list li a:hover {
+  color: rgb(104, 102, 110);
 }
 
 #nav__link--1 {
@@ -250,11 +279,17 @@ main {
 }
 
 .title__name h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+}
+
+.title__location {
+  margin-right: 10px;
 }
 
 .title__name p {
+  margin-top: 15px;
   display: inline-block;
+  color: rgb(203, 204, 206);
 }
 
 .title__name a {
@@ -267,6 +302,20 @@ main {
   justify-content: flex-end;
   align-items: center;
   margin-right: 3%;
+}
+
+.title__icons button {
+  padding: 10px 20px;
+  border: 1.5px solid #a2acbe;
+  border-radius: 20px;
+  background: none;
+  color: #a2acbe;
+  font-size: 1rem;
+}
+
+.ball-green {
+  border: 5px solid green;
+  border-radius: 10px;
 }
 
 .title__icon {
@@ -285,5 +334,19 @@ main {
   align-items: center;
 }
 /* LINKS SECTION */
+
+.link__article {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h4 {
+}
+
+.link__icon {
+
+}
 
 
