@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="stylesheet/styles.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
   <link rel="stylesheet" type="text/css" href="stylesheet/responsive.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet/donut-svg.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
@@ -90,7 +91,50 @@
       </ul>
     </section>
 
-    <section class="graph__donut"></section>
+    <section class="graph__donut">
+      <figure class="donuts" aria-label="donut graphs">
+        <article class="donut donut-1">
+          <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+            <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
+            <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#46b8c5" stroke-width="3" stroke-dasharray="80 20" stroke-dashoffset="10"></circle>
+            <g class="chart-text">
+              <text x="50%" y="50%" class="chart-number">3,195
+              </text>
+              <text x="50%" y="50%" class="chart-label">Applicants
+              </text>
+            </g>
+          </svg>
+        </article>
+        <article class="donut donut-2">
+          <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+            <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
+            <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#0ea1fb" stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="80"></circle>
+            <g class="chart-text">
+              <text x="50%" y="50%" class="chart-number">1,092
+              </text>
+              <text x="50%" y="50%" class="chart-label">Interviews
+              </text>
+            </g>
+          </svg>
+        </article>
+        <article class="donut donut-3">
+          <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+            <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
+            <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#b267b2" stroke-width="3" stroke-dasharray="15 85" stroke-dashoffset="25"></circle>
+            <g class="chart-text">
+              <text x="50%" y="50%" class="chart-number">800
+              </text>
+              <text x="50%" y="50%" class="chart-label">Forwards
+              </text>
+            </g>
+          </svg>
+        </article>
+      </figure>
+      <figcaption class="graphs__caps"> TOTALS - Out of 5,321 views</figcaption>
+    </section>
 
     <section class="graph__bar"></section>
 

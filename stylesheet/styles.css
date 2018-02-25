@@ -110,7 +110,7 @@ main {
   line-height: 3;
   text-transform: uppercase;
   text-decoration: none;
-  color: gray;
+  color: #aebacc;
 }
 
 .nav__site a:hover {
@@ -231,7 +231,7 @@ hr {
   width: 100%;
   height: 70px;
   background-color: grey;
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
 }
 
 .table h2 {
@@ -349,4 +349,26 @@ h4 {
 
 }
 
+
+/* DONUT GRAPH SECTION */
+
+.donuts {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.graphs__caps {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  margin: -20px auto 10px;
+  padding: 10px 20px;
+  border: 1px solid #a2acbe;
+  border-radius: 25px;
+  background-color: white;
+}
+
+/* BAR GRAPH SECTION */
 

@@ -1,0 +1,18 @@
+.chart-text {
+  fill: #000;
+  transform: translateY(0.1rem);
+}
+
+.chart-number {
+  font-size: 0.5rem;
+  line-height: 1;
+  text-anchor: middle;
+  transform: translateY(-0.1rem);
+}
+
+.chart-label {
+  font-size: 0.15rem;
+  text-transform: uppercase;
+  text-anchor: middle;
+  transform: translateY(0.3rem);
+}
