@@ -338,18 +338,46 @@ hr {
 }
 /* LINKS SECTION */
 
+.links {
+}
+
 .link__article {
   height: 240px;
+  width: 90%;
   display: flex;
+  border-bottom: 1px solid #69727c;
   flex-direction: column;
   justify-content: center;
 }
 
-h4 {
+.links h4 {
+  margin-bottom: 20px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #69727c;
 }
 
-.link__icon {
+.links p {
+  margin-bottom: 30px;
+  font-size: .8rem;
+  color: #69727c;
+}
 
+.link__input {
+  height: 45px;
+  display: flex;
+}
+
+.link__input button {
+  height: 52px;
+  width: 20%;
+  color: white;
+  background-color: rgb(72, 182, 192);
+}
+
+.link__input input {
+  height: 100%;
+  width: 80%;
 }
 
 
