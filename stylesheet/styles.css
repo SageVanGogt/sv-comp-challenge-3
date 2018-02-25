@@ -37,14 +37,14 @@ main {
 
 .title {
   grid-area: c;
-  background-color: yellow;
+  background-color: white;
   display: flex;
   border-top: 1px solid gray;
 }
 
 .nav__position {
   grid-area: d;
-  background-color: green;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -52,17 +52,17 @@ main {
 
 .graph__donut {
   grid-area: e;
-  background-color: pink;
+  background-color: #edf2f6;
 }
 
 .graph__bar {
   grid-area: f;
-  background-color: purple;
+  background-color: #edf2f6;
 }
 
 .description {
   grid-area: g;
-  background-color: chartreuse;
+  background-color: #edf2f6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@ main {
 
 .social {
   grid-area: h;
-  background-color: magenta;
+  background-color: #edf2f6;
   display: flex;
   flex-wrap:wrap;
   align-items: space-around;
@@ -78,7 +78,7 @@ main {
 
 .links {
   grid-area: i;
-  background-color: lightgreen;
+  background-color: #edf2f6;
 }
 
   
