@@ -98,6 +98,7 @@ main {
 }
 
 .user p {
+  color: #aebacc;
   margin-top:30px;
 }
 
@@ -201,12 +202,12 @@ hr {
   background-color: white;
   width: 86%;
   height: 88%;
-  line-height: 3;
+  line-height: 4;
   border-radius: 5px;
 }
 
 .table table {
-  width: 85%;
+  width: 90%;
   margin: auto;
 }
 
@@ -339,6 +340,7 @@ hr {
 /* LINKS SECTION */
 
 .links {
+
 }
 
 .link__article {
@@ -394,7 +396,7 @@ hr {
   width: 30%;
   display: flex;
   justify-content: center;
-  margin: -20px auto 10px;
+  margin: 0 auto;
   padding: 10px 20px;
   border: 1px solid #a2acbe;
   border-radius: 25px;
@@ -435,6 +437,10 @@ hr {
 
 .linkedin {
   background-color: #0381bc;
+}
+
+.icons__responsive {
+  display: none;
 }
 
 
