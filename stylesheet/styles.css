@@ -9,7 +9,7 @@ main {
   display: grid;
   width:100vw;
   grid-template-columns: 220px calc(55% - 121px) calc(15% - 33px) calc(30% - 66px);
-  grid-template-rows: 90px 160px 50px 370px 250px 750px;
+  grid-template-rows: 90px 160px 50px 370px 270px 730px;
   grid-template-areas: 
               "a b b b"
               "a c c c"
@@ -71,6 +71,9 @@ main {
 .social {
   grid-area: h;
   background-color: magenta;
+  display: flex;
+  flex-wrap:wrap;
+  align-items: space-around;
 }
 
 .links {
@@ -197,7 +200,7 @@ hr {
 .table {
   background-color: white;
   width: 86%;
-  height: 86%;
+  height: 88%;
   line-height: 3;
   border-radius: 5px;
 }
@@ -336,7 +339,7 @@ hr {
 /* LINKS SECTION */
 
 .link__article {
-  height: 250px;
+  height: 240px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -371,4 +374,39 @@ h4 {
 }
 
 /* BAR GRAPH SECTION */
+
+/* SOCIAL */
+
+.social__links {
+  height: 52px;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.social__links a {
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+}
+
+.social__icon {
+  margin-left: 20px;
+  color: white;
+}
+
+.facebook {
+  margin-top: 60px;
+  background-color: #4c71c3;
+}
+
+.twitter {
+  background-color: #03aaef;
+}
+
+.linkedin {
+  background-color: #0381bc;
+}
+
 
