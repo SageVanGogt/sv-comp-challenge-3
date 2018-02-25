@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="stylesheet/styles.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
   <link rel="stylesheet" type="text/css" href="stylesheet/responsive.css">
+  <link rel="stylesheet" type="text/css" href="stylesheet/donut-svg.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
@@ -20,20 +21,20 @@
       <hr>
       <h3>Main</h3>
       <ul>
-        <li><a href="#"><img src="" alt="">home</a></li>
-        <li><a href="#"><img src="" alt="">jobs</a></li>
-        <li><a href="#"><img src="" alt="">resumes</a></li>
-        <li><a href="#"><img src="" alt="">task</a></li>
-        <li><a href="#"><img src="" alt="">calendar</a></li>
+        <li><a href="#"><i class="fas fa-home nav__icon"></i> home</a></li>
+        <li><a href="#"><i class="fas fa-briefcase nav__icon"></i> jobs</a></li>
+        <li><a href="#"><i class="fas fa-newspaper nav__icon"></i> resumes</a></li>
+        <li><a href="#"><i class="fas fa-tasks nav__icon"></i> task</a></li>
+        <li><a href="#"><i class="fas fa-calendar-alt nav__icon"></i> calendar</a></li>
       </ul>
       <hr>
       <h3>Admin</h3>
       <ul>
-        <li><a href="#"><img src="" alt="">users</a></li>
-        <li><a href="#"><img src="" alt="">locations</a></li>
-        <li><a href="#"><img src="" alt="">workflows</a></li>
-        <li><a href="#"><img src="" alt="">job boards</a></li>
-        <li><a href="#"><img src="" alt="">social</a></li>
+        <li><a href="#"><i class="fas fa-users nav__icon"></i>users</a></li>
+        <li><a href="#"><i class="fas fa-globe nav__icon"></i> locations</a></li>
+        <li><a href="#"><i class="fas fa-folder-open nav__icon"></i> workflows</a></li>
+        <li><a href="#"><i class="fas fa-clipboard nav__icon"></i> job boards</a></li>
+        <li><a href="#"><i class="fas fa-share-alt nav__icon"></i> social</a></li>
       </ul>
       <hr>
       <h3>Categories</h3>
@@ -43,7 +44,6 @@
         <li><a href="#"><img src="" alt="">executive</a></li>
         <li><a href="#"><img src="" alt="">human resources</a></li>
       </ul>
-      <hr>
     </nav>
 
     <section class="search">
@@ -68,11 +68,11 @@
     <section class="title" aria-label="position info">
       <article class="title__name" aria-label="position name">
         <h1>Customer Service Representative</h1>
-        <p> <i class="fas fa-map-marker"></i>San Francisco, CA</p>
-        <a href="#">View Position</a>
+        <p> <i class="fas fa-map-marker title__location"></i>San Francisco, CA &nbsp; &middot; &nbsp;</p>
+        <a href="#">Preview this Post</a>
       </article>
       <article class="title__icons" aria-label="position links">
-        <button></button>
+        <button><span class="ball-green"></span>open</button>
         <div class="icon--border"><i class="fas fa-bookmark title__icon"></i></div>
         <div class="icon--border"><i class="fas fa-pencil-alt title__icon"></i></div>
         <div class="icon--border"><i class="fas fa-trash-alt title__icon"></i></div>
@@ -91,7 +91,50 @@
       </ul>
     </section>
 
-    <section class="graph__donut"></section>
+    <section class="graph__donut">
+      <figure class="donuts" aria-label="donut graphs">
+        <article class="donut donut-1">
+          <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+            <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
+            <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#46b8c5" stroke-width="3" stroke-dasharray="80 20" stroke-dashoffset="10"></circle>
+            <g class="chart-text">
+              <text x="50%" y="50%" class="chart-number">3,195
+              </text>
+              <text x="50%" y="50%" class="chart-label">Applicants
+              </text>
+            </g>
+          </svg>
+        </article>
+        <article class="donut donut-2">
+          <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+            <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
+            <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#0ea1fb" stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="80"></circle>
+            <g class="chart-text">
+              <text x="50%" y="50%" class="chart-number">1,092
+              </text>
+              <text x="50%" y="50%" class="chart-label">Interviews
+              </text>
+            </g>
+          </svg>
+        </article>
+        <article class="donut donut-3">
+          <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+            <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
+            <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+            <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#b267b2" stroke-width="3" stroke-dasharray="15 85" stroke-dashoffset="25"></circle>
+            <g class="chart-text">
+              <text x="50%" y="50%" class="chart-number">800
+              </text>
+              <text x="50%" y="50%" class="chart-label">Forwards
+              </text>
+            </g>
+          </svg>
+        </article>
+      </figure>
+      <figcaption class="graphs__caps"> TOTALS - Out of 5,321 views</figcaption>
+    </section>
 
     <section class="graph__bar"></section>
 
@@ -140,21 +183,21 @@
     <section class="social"></section>
 
     <section class="links">
-      <article class="">
-        <h4><img src="">Link to This Job</h4>
-        <p></p>
+      <article class="link__article">
+        <h4><i class="fas fa-globe links__icon"></i> Link to This Job</h4>
+        <p>Lorem Khaled Ipsum is a major key to success. You should never complain, complaining is a weak emotion, you got life, we breathing, we blessed.</p>
         <input type="text">
       </article>
         <hr>
-      <article class="">
-        <h4><img src="">Use the Button Widget</h4>
-        <p></p>
+      <article class="link__article">
+        <h4><i class="fas fa-save links__icon"></i> Use the Button Widget</h4>
+        <p>  We the best. The key to success is to keep your head above the water, never give up.</p>
         <input type="text">
       </article>
         <hr>
-      <article class="">
-        <h4><img src="">Upload Resumes by Widget</h4>
-        <p></p>
+      <article class="link__article">
+        <h4><i class="fas fa-paper-plane links__icon"></i> Upload Resumes by Widget</h4>
+        <p> To succeed you must believe. When you believe, you will succeed. Don’t ever play yourself.</p>
         <input type="text">
       </article>
     </section>
