@@ -68,14 +68,13 @@
     display: grid;
     width:100vw;
     grid-template-columns: 55vw 15vw 30vw;
-    grid-template-rows: 90px 160px 50px 370px 250px 750px;
+    grid-template-rows: 90px 160px 50px 370px 250px 900px 200px 100px;
     grid-template-areas: 
                 "b b b"
                 "c c c"
                 "d d d"
                 "e e e"
                 "f f f"
-                "g g g"
                 "g g g"
                 "i i i"
                 "h h h";

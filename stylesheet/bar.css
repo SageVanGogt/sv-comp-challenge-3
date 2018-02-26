@@ -1,0 +1,28 @@
+
+.shadow {
+  fill: rgb(219, 229, 235);
+}
+
+.bar {
+  fill: rgb(73, 184, 191);
+}
+
+
+.bar:hover {
+  fill: darkgray;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
