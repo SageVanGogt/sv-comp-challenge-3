@@ -39,7 +39,7 @@ main {
   grid-area: c;
   background-color: white;
   display: flex;
-  border-top: 1px solid gray;
+  border-top: 1.5px solid #f5f5f7
 }
 
 .nav__position {
@@ -52,6 +52,8 @@ main {
 
 .graph__donut {
   grid-area: e;
+  border-bottom: 3px solid #e8ebf0;
+  border-top: 3px solid #e8ebf0;
   background-color: #edf2f6;
 }
 
@@ -62,6 +64,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-bottom: 3px solid #e8ebf0;
+  border-top: 3px solid #e8ebf0;
 }
 
 .description {
@@ -147,6 +151,75 @@ hr {
   border: 1px solid rgb(48, 58, 75);
 }
 
+.checkboxes {
+  padding: 13px 60px 13px 30px;
+}
+
+.check {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  font-size: .8rem;
+  color: #aebacc;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+}
+
+.check-1 {
+  background-color: #fed512;
+}
+
+.check-2 {
+  background-color: #2fb1f6;
+}
+
+.check-3 {
+  background-color: #e81a60;
+}
+
+.check-4 {
+  background-color: #06ab89;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check .checkmark:after {
+  left: 4px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 
 /* SEARCH */
 
@@ -156,7 +229,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1px solid gray;
+  border-right: 1.5px solid #f5f5f7;
 }
 
 .search__icons {
@@ -174,7 +247,7 @@ hr {
 }
 
 .search__person {
-  border-left: 1px solid gray;
+  border-left: 1.5px solid #f5f5f7;
 }
 
 .search__bar {
@@ -254,19 +327,19 @@ hr {
   display: flex;
 }
 
-.nav__position--list li a:hover {
-  border-bottom: 2px solid blue;
-}
 
 .nav__position--list li a {
+  padding-bottom: 14px;
   text-transform: uppercase;
   text-decoration: none;
   margin: 0 2vw;  
   font-size: .9rem;
-  color: rgb(203, 204, 206);
+  font-weight: 700;
+  color: #a1a6ab;
 }
 
 .nav__position--list li a:hover {
+  border-bottom: 2px solid #36aef7;
   color: rgb(104, 102, 110);
 }
 
@@ -297,7 +370,7 @@ hr {
 .title__name p {
   margin-top: 15px;
   display: inline-block;
-  color: rgb(203, 204, 206);
+  color: #a1a6ab;
 }
 
 .title__name a {
@@ -386,6 +459,9 @@ hr {
   width: 80%;
 }
 
+.end__article {
+  border-bottom: none;
+}
 
 /* DONUT GRAPH SECTION */
 
@@ -401,7 +477,8 @@ hr {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 10px 25px;
+  font-size: .9rem;
   border: 1px solid #a2acbe;
   border-radius: 25px;
   background-color: white;
@@ -425,7 +502,8 @@ hr {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 10px 25px;
+  font-size: .9rem;
   border: 1px solid #a2acbe;
   border-radius: 25px;
   background-color: white;
