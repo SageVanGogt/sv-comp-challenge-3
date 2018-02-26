@@ -33,6 +33,7 @@
 
   /* NAV JOB POSITION MID PAGE */
   .nav__position--list li a {
+    padding-bottom: 16px;
     margin: 0 10%;  
     font-size: .8rem;
   }
