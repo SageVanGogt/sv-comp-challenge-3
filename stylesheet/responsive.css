@@ -107,18 +107,46 @@
   main {
     display: grid;
     width:100vw;
-    grid-template-columns: 55vw 15vw 30vw;
+    grid-template-columns: 1fr;
     grid-template-rows: 90px 160px 50px 370px 250px 900px 200px 100px;
     grid-template-areas: 
-                "b b b"
-                "c c c"
-                "d d d"
-                "e e e"
-                "f f f"
-                "g g g"
-                "i i i"
-                "h h h";
+                "b"
+                "c"
+                "d"
+                "e"
+                "f"
+                "g"
+                "i"
+                "";
 
   }
+
+  /* SEARCH */
+
+  .search__person, .search__page, .search__list {
+    display: none;
+  }
+
+  .search__bar {
+    width: calc(100% - 92px)
+  }
+
+  /* POSITION TITLE */
+
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .title__name {
+    width: 100%;
+  }
+
+  .title__icons {
+    display: none;
+  }
+
+  /* POSITION NAV */
 }
 
