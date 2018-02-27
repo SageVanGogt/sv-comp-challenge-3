@@ -19,6 +19,13 @@
   }
 
   /* GRID SECTIONS */
+  .graph__donut {
+    border-bottom: none;
+  }
+
+  .graph__bar {
+    border-top: none;
+  }
 
   .links {
     display: flex;
@@ -30,6 +37,12 @@
     justify-content: center;
     align-items: center;
   }
+  
+  /* POSITION TITLE */
+
+  .title__name h1 {
+  font-size: 1.34rem;
+}
 
   /* NAV JOB POSITION MID PAGE */
   .nav__position--list li a {
@@ -40,6 +53,9 @@
 
   #nav__link--1 {
   }
+
+  /* DONUT GRAPH */
+  
 
   /* LINKS SECTIONS */
 
@@ -88,6 +104,21 @@
 }
 
 @media screen and (max-width: 690px) {
+  main {
+    display: grid;
+    width:100vw;
+    grid-template-columns: 55vw 15vw 30vw;
+    grid-template-rows: 90px 160px 50px 370px 250px 900px 200px 100px;
+    grid-template-areas: 
+                "b b b"
+                "c c c"
+                "d d d"
+                "e e e"
+                "f f f"
+                "g g g"
+                "i i i"
+                "h h h";
 
+  }
 }
 
