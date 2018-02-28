@@ -58,12 +58,34 @@
   
 
   /* LINKS SECTIONS */
-
+  .links {
+    padding: 0 7.5% 0;
+    display: flex;
+    justify-content: space-between;
+  }
   .link__article {
     margin: 0;
     width: 30%;
     display: inline-block;
     border: none;
+  }
+
+  .link__article h4 {
+    font-size: .8rem;
+  }
+
+  .link__article p {
+    font-size: .7rem;
+    height: 40px;
+  }
+
+  .link__input {
+    height: 30px;
+  }
+  
+  .link__input button {
+    height: 35px;
+    width: 20%;
   }
 
   /* SOCIAL LINKS */
@@ -84,17 +106,17 @@
   main {
     display: grid;
     width:100vw;
-    grid-template-columns: 55vw 15vw 30vw;
+    grid-template-columns: 1fr;
     grid-template-rows: 90px 160px 50px 370px 250px 900px 200px 100px;
     grid-template-areas: 
-                "b b b"
-                "c c c"
-                "d d d"
-                "e e e"
-                "f f f"
-                "g g g"
-                "i i i"
-                "h h h";
+                "b"
+                "c"
+                "d"
+                "e"
+                "f"
+                "g"
+                "i"
+                "h";
 
   }
 
@@ -108,7 +130,7 @@
     display: grid;
     width:100vw;
     grid-template-columns: 1fr;
-    grid-template-rows: 90px 160px 50px 370px 250px 900px 200px 100px;
+    grid-template-rows: 50px 120px 10px 150px 200px 1% 400px 100px;
     grid-template-areas: 
                 "b"
                 "c"
@@ -117,8 +139,14 @@
                 "f"
                 "g"
                 "i"
-                "";
+                "h";
 
+  }
+
+  /* GRID AREAS */
+
+  .description {
+    display: block;
   }
 
   /* SEARCH */
@@ -126,9 +154,22 @@
   .search__person, .search__page, .search__list {
     display: none;
   }
+  
+  .fa-angle-double-left {
+    display: none;
+  }
+
+  .fa-angle-double-right {
+    display: block;
+  }
+
+  .search__menu {
+    height: 50px;
+    width: 50px;
+  }
 
   .search__bar {
-    width: calc(100% - 92px)
+    width: calc(100% - 50px)
   }
 
   /* POSITION TITLE */
@@ -137,10 +178,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
   }
 
   .title__name {
     width: 100%;
+  }
+
+  .title__name p, .title__name a {
+    font-size: .8rem;
   }
 
   .title__icons {
@@ -148,5 +194,149 @@
   }
 
   /* POSITION NAV */
+  
+  .nav__position--list {
+    display: none;
+  }
+
+  .nav__mobile {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    border-radius: 50%;
+    background-color: #364051;
+  }
+
+  .nav__mobile:hover {
+    background-color: #ccc;
+  }
+
+  /* JOB DESCRIPTION */
+  .description {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a2acbe;
+  }
+
+  .table {
+    width:90%;
+    margin: 0 auto;
+    padding: 0 0;
+  }
+
+  .table__col--1 {
+    padding-right: 50px;
+    text-transform: uppercase;
+    font-size: .6rem;
+}
+
+  .table__col--2 {
+    font-size: .9rem;
+}
+
+  .accordion {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    border-radius: 50%;
+    background-color: #364051;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+
+  .panel {
+    padding: 0 0;
+    background-color: white;
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 0.5s ease-out;
+  }
+
+
+  /* DONUT GRAPH */
+
+  .graphs__caps {
+    width: 40%;
+    padding: 5px 20px;
+    font-size: .4rem;
+  }
+
+  .graph__donut {
+    padding-bottom: 5px;
+  }
+
+  /* BAR GRAPH */
+  .graph__info {
+    width: 40%;
+  }
+
+  .graph__info--text {
+    padding: 5px 20px;
+    font-size: .4rem;
+  }
+
+  .graph__svg {
+    margin-top:40px;
+  }
+
+  .graph__bar {
+    border-bottom: none;
+    padding-bottom: 30px;
+  }
+
+  /* LINKS */
+
+  .link__input {
+    height: 20px;
+    width: 90%;
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  .link__input button {
+    height: 25px;
+    width: 15%;
+    font-size: 6px;
+  }
+
+  .links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+  }
+  
+  .link__article {
+    width: 90%;
+    height: 30%;
+    margin-top: 10px;
+    border-bottom: 1px solid grey;
+  }
+
+  .link__article h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .link__article p {
+    display: block;
+    width:90%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: .7rem;
+  }
+
+  /* SOCIAL */
+
 }
 
