@@ -135,12 +135,12 @@ main {
 }
 
 .nav__site li {
-  font-size: .8rem;
+  font-size: .9rem;
   transition: .3s;
 }
 
 .nav__site li:hover {
-  border-left: 5px solid aqua;
+  border-left: 3px solid aqua;
   background-color: rgb(48, 58, 75);
   cursor: pointer;
 }
@@ -168,7 +168,7 @@ hr {
   padding-left: 25px;
   margin-bottom: 30px;
   cursor: pointer;
-  font-size: .8rem;
+  font-size: .9rem;
   color: #aebacc;
   text-transform: uppercase;
   user-select: none;
