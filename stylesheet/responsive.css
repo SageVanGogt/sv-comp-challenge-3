@@ -130,7 +130,7 @@
     display: grid;
     width:100vw;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 120px 10px 150px 200px 1% 400px 100px;
+    grid-template-rows: 50px 120px 10px 220px 200px 1% 400px 100px;
     grid-template-areas: 
                 "b"
                 "c"
@@ -143,11 +143,7 @@
 
   }
 
-  /* GRID AREAS */
 
-  .description {
-    display: block;
-  }
 
   /* SEARCH */
 
@@ -216,7 +212,9 @@
   }
 
   /* JOB DESCRIPTION */
+
   .description {
+    display: block;
     padding-bottom: 20px;
     border-bottom: 1px solid #a2acbe;
   }

@@ -22,7 +22,9 @@ main {
 
 }
 
-/* GRID SECTIONS */
+/* ========================================
+              GRID SECTIONS 
+========================================*/
 
 .nav__site {
   grid-area: a;
@@ -31,23 +33,23 @@ main {
 
 .search {
   grid-area: b;
-  background-color: white;
   display: flex;
+  background-color: white;
 }
 
 .title {
   grid-area: c;
-  background-color: white;
   display: flex;
-  border-top: 1.5px solid #f5f5f7
+  border-top: 1.5px solid #f5f5f7;
+  background-color: white;
 }
 
 .nav__position {
   grid-area: d;
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  background-color: white;
 }
 
 .graph__donut {
@@ -59,29 +61,29 @@ main {
 
 .graph__bar {
   grid-area: f;
-  background-color: #edf2f6;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-bottom: 3px solid #e8ebf0;
   border-top: 3px solid #e8ebf0;
+  background-color: #edf2f6;
 }
 
 .description {
   grid-area: g;
-  background-color: #edf2f6;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #edf2f6;
 }
 
 .social {
   grid-area: h;
-  background-color: #edf2f6;
   display: flex;
   flex-wrap:wrap;
   align-items: space-around;
+  background-color: #edf2f6;
 }
 
 .links {
@@ -90,7 +92,9 @@ main {
 }
 
   
-/* NAV */
+/* ========================================
+              NAV
+========================================*/
 
 .user {
   height: 180px;
@@ -106,13 +110,13 @@ main {
 }
 
 .user p {
-  color: #aebacc;
   margin-top:30px;
+  color: #aebacc;
 }
 
 .nav__site h3 {
-  line-height: 3;
   margin-left: 30px;
+  line-height: 3;
   font-size: .8rem;
   color: rgb(98, 111, 129);
 }
@@ -135,8 +139,8 @@ main {
 }
 
 .nav__site li:hover {
-  background-color: rgb(48, 58, 75);
   border-left: 5px solid aqua;
+  background-color: rgb(48, 58, 75);
 }
 
 .nav__icon {
@@ -156,8 +160,8 @@ hr {
 }
 
 .check {
-  display: block;
   position: relative;
+  display: block;
   padding-left: 25px;
   margin-bottom: 30px;
   cursor: pointer;
@@ -221,9 +225,14 @@ hr {
 }
 
 
-/* SEARCH */
+/* ========================================
+              SEARCH 
+========================================*/
 
-.search__list, .search__page, .search__person, .search__menu {
+.search__list, 
+.search__page, 
+.search__person, 
+.search__menu {
   width: 92px;
   height: 90px;
   display: flex;
@@ -233,9 +242,9 @@ hr {
 }
 
 .search__icons {
-  color: #a2acbe;
-  font-size: 150%;
   padding: 38px;
+  font-size: 150%;
+  color: #a2acbe;
 }
 
 .fa-angle-double-right {
@@ -246,7 +255,10 @@ hr {
   color: white;
 }
 
-.search__list:hover, .search__page:hover, .search__person:hover, .search__menu:hover {
+.search__list:hover, 
+.search__page:hover, 
+.search__person:hover, 
+.search__menu:hover {
   background-color: #44a4fa;
 }
 
@@ -262,29 +274,31 @@ hr {
 }
 
 .fa-search  {
+  margin-right: 2%;
   font-size: 120%;
   color: #a2acbe;
-  margin-right: 2%;
 }
 
 .search__input {
   height: 100%;
   width: 90%;
   float: right;
-  font-size: 1rem;
   border: none;
   outline: none;
+  font-size: 1rem;
 }
 
 
-/* JOB DESCRIPTION */
+/* ========================================
+              JOB DESCRIPTION
+========================================*/
 
 .table {
-  background-color: white;
   width: 86%;
   height: 88%;
-  line-height: 4;
   border-radius: 5px;
+  line-height: 4;
+  background-color: white;
 }
 
 .table table {
@@ -293,8 +307,8 @@ hr {
 }
 
 .table tr {
-  border-bottom: 1px solid gray;
   margin-left: 20px;
+  border-bottom: 1px solid gray;
 }
 
 #last {
@@ -303,8 +317,8 @@ hr {
 
 .table__col--1 {
   padding-right: 150px;
-  text-transform: uppercase;
   font-size: .85rem;
+  text-transform: uppercase;
 }
 
 .table__col--2 {
@@ -312,22 +326,22 @@ hr {
 }
 
 #description {
-  line-height: 1;
   padding-bottom: 15px;
+  line-height: 1;
 }
 
 .table__banner {
   width: 100%;
   height: 80px;
-  background-color: #6f7e95;
   border-radius: 5px 5px 0 0;
+  background-color: #6f7e95;
 }
 
 .table h2 {
-  text-transform: uppercase;
   padding: 10px 0 0 5%;
+  display: inline-block;
+  text-transform: uppercase;
   color: white;
-  display:inline-block;
 }
 
 .table__banner button {
@@ -336,8 +350,8 @@ hr {
   margin-left: 30px;
   display: inline-block;
   border: none;
-  font-size: 1rem;
   border-radius: 1px;
+  font-size: 1rem;
   text-transform: uppercase;
   color: white;
   background-color: #7e8baa;
@@ -351,7 +365,9 @@ hr {
   display: none;
 }
 
-/* JOB POSITION NAV MID PAGE */
+/* ========================================
+        JOB POSITION NAV MID PAGE
+========================================*/
 
 .nav__position--list {
   display: flex;
@@ -359,12 +375,12 @@ hr {
 
 
 .nav__position--list li a {
-  padding-bottom: 14px;
-  text-transform: uppercase;
-  text-decoration: none;
   margin: 0 2vw;  
+  padding-bottom: 14px;
   font-size: .9rem;
   font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
   color: #a1a6ab;
 }
 
@@ -381,10 +397,12 @@ hr {
   display: none;
 }
 
+/* ========================================
+            POSITION TITLE
+========================================*/
 
-/* POSITION TITLE */
-
-.title__name, .title__icons {
+.title__name, 
+.title__icons {
   width: 50%;
 }
 
@@ -412,25 +430,25 @@ hr {
 }
 
 .title__icons {
+  margin-right: 3%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-right: 3%;
 }
 
 .title__icons button {
-  padding: 10px 20px;
   margin-right: 3%;
+  padding: 10px 20px;
   border: 1.5px solid #a2acbe;
   border-radius: 20px;
   background: none;
-  color: #a2acbe;
   font-size: 1rem;
+  color: #a2acbe;
 }
 
 .open__green {
-  color: chartreuse;
   font-size: 14px;
+  color: chartreuse;
 }
 
 .title__icon {
@@ -448,16 +466,19 @@ hr {
   justify-content: center;
   align-items: center;
 }
-/* LINKS SECTION */
 
+
+/* ========================================
+            LINKS SECTIONS
+========================================*/
 
 .link__article {
   height: 240px;
   width: 90%;
   display: flex;
-  border-bottom: 1px solid #69727c;
   flex-direction: column;
   justify-content: center;
+  border-bottom: 1px solid #69727c;
 }
 
 .links h4 {
@@ -481,8 +502,8 @@ hr {
 .link__input button {
   height: 52px;
   width: 20%;
-  color: white;
   background-color: rgb(72, 182, 192);
+  color: white;
 }
 
 .link__input input {
@@ -494,7 +515,9 @@ hr {
   border-bottom: none;
 }
 
-/* DONUT GRAPH SECTION */
+/* ========================================
+           DONUT GRAPH SECTION
+========================================*/
 
 .donuts {
   height: 80%;
@@ -505,17 +528,19 @@ hr {
 
 .graphs__caps {
   width: 34%;
-  display: flex;
-  justify-content: center;
   margin: 0 auto;
   padding: 10px 25px;
-  font-size: .9rem;
+  display: flex;
+  justify-content: center;
   border: 1px solid #a2acbe;
   border-radius: 25px;
+  font-size: .9rem;
   background-color: white;
 }
 
-/* BAR GRAPH SECTION */
+/* ========================================
+           BAR GRAPH SECTION
+========================================*/
 
 .graph__svg {
   width: 100%;
@@ -531,17 +556,19 @@ hr {
 
 .graph__info--text {
   width: 80%;
+  padding: 10px 25px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  padding: 10px 25px;
-  font-size: .9rem;
   border: 1px solid #a2acbe;
   border-radius: 25px;
+  font-size: .9rem;
   background-color: white;
 }
 
-/* SOCIAL */
+/* ========================================
+           SOCIAL LINKS SECTION
+========================================*/
 
 .social__links {
   height: 52px;
