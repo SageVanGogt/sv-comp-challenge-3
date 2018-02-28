@@ -15,13 +15,13 @@
 <body>
   <main>
     <nav class="nav__site">
-      <article class="user">
-        <img src="images/head.png">
-        <p>Coconut Head</p>
+      <article class="user" aria-label="user profile">
+        <img src="images/head.png" alt="user profile image">
+        <p aria-label="user profile name">Coconut Head</p>
       </article>
       <hr>
       <h3>Main</h3>
-      <ul>
+      <ul aria-label="main navigation list">
         <li><a href="#"><i class="fas fa-home nav__icon"></i> home</a></li>
         <li><a href="#"><i class="fas fa-briefcase nav__icon"></i> jobs</a></li>
         <li><a href="#"><i class="fas fa-newspaper nav__icon"></i> resumes</a></li>
@@ -30,7 +30,7 @@
       </ul>
       <hr>
       <h3>Admin</h3>
-      <ul>
+      <ul aria-label="admin navigation list">
         <li><a href="#"><i class="fas fa-users nav__icon"></i>users</a></li>
         <li><a href="#"><i class="fas fa-globe nav__icon"></i> locations</a></li>
         <li><a href="#"><i class="fas fa-folder-open nav__icon"></i> workflows</a></li>
@@ -39,7 +39,7 @@
       </ul>
       <hr>
       <h3>Categories</h3>
-      <ul class="checkboxes">
+      <ul class="checkboxes" aria-label="checkbox field">
         <label class="check">administrative
           <input type="checkbox" checked="checked">
           <span class="checkmark check-1"></span>
@@ -56,29 +56,25 @@
           <input type="checkbox">
           <span class="checkmark  check-4"></span>
         </label>
-        <!-- <li><a href="#"><img src="" alt="">administrative</a></li>
-        <li><a href="#"><img src="" alt="">design</a></li>
-        <li><a href="#"><img src="" alt="">executive</a></li>
-        <li><a href="#"><img src="" alt="">human resources</a></li> -->
       </ul>
     </nav>
 
     <section class="search">
-      <article class="search__menu">
+      <article class="search__menu" aria-label="menu slider button">
         <i class="fas fa-angle-double-left search__icons"></i>
         <i class="fas fa-angle-double-right search__icons"></i>
       </article> 
-      <article class="search__bar">
+      <article class="search__bar" aria-label="search bar">
         <i class="fas fa-search"></i>
         <input type="text" class="search__input" aria-label="search bar input area" placeholder="search for a job, task or resume">
       </article>
-      <article class="search__person">
+      <article class="search__person" aria-label="profile link">
         <i class="fas fa-address-book search__icons"></i>
       </article>
-      <article class="search__page">
+      <article class="search__page" aria-label="page link">
         <i class="fas fa-list-ul search__icons"></i>
       </article>
-      <article class="search__list">
+      <article class="search__list" aria-label="list link">
         <i class="fas fa-th search__icons"></i>
       </article>
     </section>
@@ -91,14 +87,14 @@
       </article>
       <article class="title__icons" aria-label="position links">
         <button><i class="fas fa-circle open__green"></i>open</button>
-        <div class="icon--border"><i class="fas fa-bookmark title__icon"></i></div>
-        <div class="icon--border"><i class="fas fa-pencil-alt title__icon"></i></div>
-        <div class="icon--border"><i class="fas fa-trash-alt title__icon"></i></div>
+        <div class="icon--border" aria-label="bookmark icon"><i class="fas fa-bookmark title__icon"></i></div>
+        <div class="icon--border" aria-label="edit icon"><i class="fas fa-pencil-alt title__icon"></i></div>
+        <div class="icon--border" aria-label="trash icon"><i class="fas fa-trash-alt title__icon"></i></div>
       </article>
     </section>
 
-    <section class="nav__position" aria-label="position stat navigation">
-      <button class="nav__mobile"><i class="fas fa-bars"></i></button>
+    <section class="nav__position" aria-label="position information navigation">
+      <button class="nav__mobile" aria-label="dropdown menu icon for mobile"><i class="fas fa-bars"></i></button>
       <ul class="nav__position--list" aria-label="list of nav options">
         <li id="nav__link--1"><a href="">summary</a></li>
         <li><a href="">applicants</a></li>
@@ -110,10 +106,10 @@
       </ul>
     </section>
 
-    <section class="graph__donut">
+    <section class="graph__donut" aria-label="donut graph with application stats">
       <figure class="donuts" aria-label="donut graphs">
         <article class="donut donut-1">
-          <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+          <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut" aria-label="donut graph number 1">
             <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
             <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
             <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#46b8c5" stroke-width="3" stroke-dasharray="80 20" stroke-dashoffset="10"></circle>
@@ -126,7 +122,7 @@
           </svg>
         </article>
         <article class="donut donut-2">
-          <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+          <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut" aria-label="donut graph number 2">
             <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
             <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
             <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#0ea1fb" stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="80"></circle>
@@ -139,7 +135,7 @@
           </svg>
         </article>
         <article class="donut donut-3">
-          <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut">
+          <svg width="100%" height="100%" viewBox="0 0 42 42" class="donut" aria-label="donut graph number 3">
             <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
             <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
             <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#b267b2" stroke-width="3" stroke-dasharray="15 85" stroke-dashoffset="25"></circle>
@@ -155,9 +151,9 @@
       <figcaption class="graphs__caps"> TOTALS - Out of 5,321 views</figcaption>
     </section>
 
-    <section class="graph__bar">
+    <section class="graph__bar" aria-label=" bar graph with application stats">
       <figure class="graph__svg">
-        <svg width="90%" height="100%">
+        <svg width="90%" height="100%" aria-label="bar graph">
             <rect class="bar" x="2%" width="3.5%" y="90%" height="10%"></rect>
             <rect class="shadow" x="2%" width="3.5%" y="0" height="90%"></rect>
             <rect class="bar" x="9%" width="3.5%" y="80%" height="20%"></rect>
@@ -189,17 +185,14 @@
           </g>
         </svg>
       </figure>
-      <ficaption class="graph__info">
+      <ficaption class="graph__info" aria-label="bar graph info">
         <p class="graph__info--text">Applicants / Day</p>
       </figcaption>
     </section>
 
-    <section class="description">
-      <button class="accordion"><i class="fas fa-arrow-down"></i>
-
-</button>
-      
-      <article class="table panel">
+    <section class="description" aria-label="chart with job descriptions">
+      <button class="accordion" aria-label="unfold button during mobile viewing"><i class="fas fa-arrow-down"></i></button>
+      <article class="table panel" aria-label="table with job info">
         <table>
           <article class="table__banner">
             <h2>job description</h2><button><i class="fas fa-pencil-alt icon__edit"></i>edit</button>
@@ -240,35 +233,35 @@
       </article>
     </section>
 
-    <section class="social">
-      <article class="social__links facebook">
+    <section class="social" aria-label="links to social media sites">
+      <article class="social__links facebook" aria-label="facebook link">
         <i class="fab fa-facebook-f social__icon"></i><a href="">Post to Facebook</a>
       </article>
-      <article class="social__links twitter">
+      <article class="social__links twitter" aria-label="twitter link">
         <i class="fab fa-twitter social__icon"></i><a href="">Tweet this Job</a>
       </article>
-      <article class="social__links linkedin">
+      <article class="social__links linkedin" aria-label="linkedin link">
         <i class="fab fa-linkedin-in social__icon"></i><a href="">Post to LinkedIn</a>
       </article>
       <article class="icons__responsive">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-facebook-f" aria-label="mobile facebook icon"></i>
+        <i class="fab fa-twitter" aria-label="mobile twitter icon"></i>
+        <i class="fab fa-linkedin-in" aria-label="mobile linkin icon"></i>
       </article>
     </section>
 
-    <section class="links">
-      <article class="link__article">
+    <section class="links" aria-label="more job related links">
+      <article class="link__article" aria-label="link to a job">
         <h4><i class="fas fa-globe links__icon"></i> Link to This Job</h4>
         <p>Lorem Khaled Ipsum is a major key to success. You should never complain, complaining is a weak emotion, you got life, we breathing, we blessed.</p>
         <div class="link__input"><input type="text"><button>copy</button></div>
       </article>
-      <article class="link__article">
+      <article class="link__article" aria-label="link to button widget">
         <h4><i class="fas fa-save links__icon"></i> Use the Button Widget</h4>
         <p>  We the best. The key to success is to keep your head above the water, never give up.</p>
         <div class="link__input"><input type="text"><button>copy</button></div>
       </article>
-      <article class="link__article end__article">
+      <article class="link__article end__article" aria-label="place to upload resume">
         <h4><i class="fas fa-paper-plane links__icon"></i> Upload Resumes by Widget</h4>
         <p> To succeed you must believe. When you believe, you will succeed. Don’t ever play yourself.</p>
         <div class="link__input"><input type="text"></div>
