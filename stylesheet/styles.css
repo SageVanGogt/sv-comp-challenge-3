@@ -238,6 +238,10 @@ hr {
   padding: 38px;
 }
 
+.fa-angle-double-right {
+  display: none;
+}
+
 .search__icons:hover {
   color: white;
 }
@@ -343,6 +347,10 @@ hr {
   margin-right: 5px;
 }
 
+.accordion {
+  display: none;
+}
+
 /* JOB POSITION NAV MID PAGE */
 
 .nav__position--list {
@@ -369,6 +377,9 @@ hr {
   margin-left: 2vw;
 }
 
+.nav__mobile {
+  display: none;
+}
 
 
 /* POSITION TITLE */
@@ -409,6 +420,7 @@ hr {
 
 .title__icons button {
   padding: 10px 20px;
+  margin-right: 3%;
   border: 1.5px solid #a2acbe;
   border-radius: 20px;
   background: none;
@@ -438,9 +450,6 @@ hr {
 }
 /* LINKS SECTION */
 
-.links {
-
-}
 
 .link__article {
   height: 240px;
@@ -495,7 +504,7 @@ hr {
 }
 
 .graphs__caps {
-  width: 30%;
+  width: 34%;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -510,13 +519,14 @@ hr {
 
 .graph__svg {
   width: 100%;
+  height: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .graph__info {
-  margin-top: 10%;
+ margin-top: 5%;
 }
 
 .graph__info--text {
@@ -535,7 +545,7 @@ hr {
 
 .social__links {
   height: 52px;
-  width: 320px;
+  width: 90%;
   display: flex;
   align-items: center;
   border-radius: 5px;
